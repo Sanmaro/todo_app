@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function TodoList({ tasks, onDelete, onEdit, onChangeEdit, onSaveEdit, editIndex, editText }) {
   return (
@@ -14,10 +14,7 @@ function TodoList({ tasks, onDelete, onEdit, onChangeEdit, onSaveEdit, editIndex
       <tbody>
         {tasks.map((task, index) => (
           <tr key={index}>
-            {/* Number rows by the task index plus one (the header row is omitted) */}
             <th scope="row">{index + 1}</th>
-            {/* When editing, the task text changes into inpur field,
-            OTHERWISE the text is displayed */}
             <td className="text-start">{editIndex === index ? (
                 <input
                   type="text"
@@ -29,7 +26,6 @@ function TodoList({ tasks, onDelete, onEdit, onChangeEdit, onSaveEdit, editIndex
                 task
               )}</td>
             <td>
-              {/* Showing different icons depending on the action (save/edit) */}
               {editIndex === index ? (
                 <img onClick={() => onSaveEdit(index)} src={`${process.env.PUBLIC_URL}/img/save.png`} alt="Save" style={{ cursor: "pointer" }} />
                 ) : (
@@ -37,7 +33,6 @@ function TodoList({ tasks, onDelete, onEdit, onChangeEdit, onSaveEdit, editIndex
               )}
             </td>
             <td>
-              {/* On click delete the task */}
               <img onClick={() => onDelete(index)} src={`${process.env.PUBLIC_URL}/img/delete.png`} alt="Delete" style={{ cursor: "pointer" }} />
             </td>
           </tr>

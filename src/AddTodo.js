@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
-// Adding a new element to the todo list
+
 function AddTodo({ onAdd }) {
   const [text, setText] = useState("");
 
-  // Handle empty input field
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!text) return;
