@@ -1,8 +1,20 @@
 # To-Do List App 
 ## A simple to-do list on-line application written in React with JavaScript
 
+### NEW VERSION!
+
+**Updated:** March 2024 \
+**Version:** 2.0 \
+**Added Node.js v.:** 20.11.1
+
+#### Release notes
+* CRUD operations are now handled by a basic Node.js backend 
+* Implemented test for server.js
+* Adjusted folder structure  
+
 ### Description:
 #### Summary
+ 
 
 **Released:** March 2024 \
 **Version:** 1.0 \
